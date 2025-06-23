@@ -1,4 +1,4 @@
-{% extends 'header.html' %} {% block content %} {% if request.user.is_authenticated %}
+{% extends 'header.html' %} {% load static %} {% block content %} {% if request.user.is_authenticated %} 
 <h2 class="text-center">Bienvenido {{ user.username | upper }}!</h2>
 {% else %}
 <h2 class="text-center">Bienvenido!</h2>
@@ -6,4 +6,7 @@
 <p class="text-center">
     Mirá las imágenes desde <a href="{% url 'home' %}">este link.</a>
 </p>
+
+<img src="{% static '/images/gif-pikachu.gif' %}" class="gif_pikachu" alt="Imagen de Pikachu saludando">
+
 {% endblock %}

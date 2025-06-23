@@ -140,3 +140,11 @@ table.table td i {
     margin-top: 6px;
     font-size: 95%;
 }
+
+.gif_pikachu {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 35px ;
+}
