@@ -1,9 +1,9 @@
 {% extends 'header.html' %} {% load static %} {% block content %} {% if request.user.is_authenticated %} 
-<h2 class="text-center">Bienvenido {{ user.username | upper }}!</h2>
+<h2 class="text-center titulos">Bienvenido {{ user.username | upper }}!</h2>
 {% else %}
-<h2 class="text-center">Bienvenido!</h2>
+<h2 class="text-center titulos">Bienvenido!</h2>
 {% endif %}
-<p class="text-center">
+<p class="text-center font">
     Mirá las imágenes desde <a href="{% url 'home' %}">este link.</a>
 </p>
 

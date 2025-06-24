@@ -1,7 +1,32 @@
+/* Fuentes Personalizadas */
+@font-face {
+    font-family: 'Fuente Pokemon';
+    src: url(./fonts/Pokemon\ Solid.ttf) format('truetype');
+}
+
+.font {
+    font-family: "Farsan", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+}
+
+.navbar {
+    background-color: rgba(255, 115, 0, 0.158);
+}
+
 body {
     background-image: url("./images/fondo-index.jpg");
-    background-size: cover
-    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+}
+
+/* Solamente los titulos tienen la fuente de Pokemon */
+.titulos {
+    font-family: 'Fuente Pokemon', sans-serif;  /* En caso de que no funcione la fuente Pokemon, utilizará sans-serif */
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 45px;
 }
 
 .table-responsive {
@@ -146,5 +171,5 @@ table.table td i {
     height: auto;
     display: block;
     margin: 0 auto;
-    padding-top: 35px ;
+    padding-top: 10px ;
 }
