@@ -18,6 +18,10 @@ def getAllImages():
     lista_cards=[]
     for elemento in lista_img:
         card=translator.fromRequestIntoCard(elemento)
+        types_aux = []
+        for t in card.types:
+            types_aux.append(get_type_icon_url_by_name(t))
+        card.types_imgs=types_aux
         lista_cards.append(card)
     return lista_cards
     
