@@ -17,7 +17,7 @@
 }
 
 body {
-    background-image: url("./images/fondo-index.jpg");
+    background-image: url("./images/fondo-index.png");
     background-size: cover;
 }
 
@@ -172,4 +172,9 @@ table.table td i {
     display: block;
     margin: 0 auto;
     padding-top: 10px ;
+}
+
+.text-body-secondary {
+    font-size: 15px;
+    font-weight: bold;
 }
