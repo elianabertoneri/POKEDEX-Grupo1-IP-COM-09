@@ -1,12 +1,13 @@
 {% extends 'header.html' %} {% load static %} {% block content %} {% if request.user.is_authenticated %} 
-<h2 class="text-center titulos">Bienvenido {{ user.username | upper }}!</h2>
+<h2 class="text-center titulos animate__animated animate__bounce">Bienvenido {{ user.username | upper }}!</h2>
 {% else %}
-<h2 class="text-center titulos">Bienvenido!</h2>
+<h2 class="text-center titulos animate__animated animate__bounce">Bienvenido!</h2>
 {% endif %}
 <p class="text-center font">
     Mirá las imágenes desde <a href="{% url 'home' %}">este link.</a>
 </p>
 
+<!-- GIF Pikachu -->
 <img src="{% static '/images/gif-pikachu.gif' %}" class="gif_pikachu" alt="Imagen de Pikachu saludando">
 
 {% endblock %}
