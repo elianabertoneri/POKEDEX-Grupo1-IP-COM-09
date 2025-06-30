@@ -166,7 +166,7 @@ table.table td i {
     font-size: 95%;
 }
 
-.gif_pikachu {
+.gif-pikachu {
     width: 400px;
     height: auto;
     display: block;
@@ -174,7 +174,7 @@ table.table td i {
     padding-top: 10px ;
 }
 
-.text-body-secondary {
+.info-cards {
     font-size: 15px;
     font-weight: bold;
 }

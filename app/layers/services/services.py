@@ -31,31 +31,26 @@ def filterByCharacter(name):
     filtered_cards = []
     name=name.lower()
     for card in getAllImages():
+        # debe verificar si el name está contenido en el nombre de la card, antes de agregarlo al listado de filtered_cards.
         if name in card.name:
             filtered_cards.append(card)
-        # debe verificar si el name está contenido en el nombre de la card, antes de agregarlo al listado de filtered_cards.
-        
-
     return filtered_cards
 
 # función que filtra las cards según su tipo.
 def filterByType(type_filter):
     filtered_cards = []
     type_filter=type_filter.lower()
-
     for card in getAllImages():
+        # debe verificar si la casa de la card coincide con la recibida por parámetro. Si es así, se añade al listado de filtered_cards.
         if type_filter in card.types:
             filtered_cards.append(card)
-            
-        # debe verificar si la casa de la card coincide con la recibida por parámetro. Si es así, se añade al listado de filtered_cards.
-
     return filtered_cards
 
 # añadir favoritos (usado desde el template 'home.html')
 def saveFavourite(request):
     fav = '' # transformamos un request en una Card (ver translator.py)
     fav.user = get_user(request) # le asignamos el usuario correspondiente.
-
+    
     return repositories.save_favourite(fav) # lo guardamos en la BD.
 
 # usados desde el template 'favourites.html'

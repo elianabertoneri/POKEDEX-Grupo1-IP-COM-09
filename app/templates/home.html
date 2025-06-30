@@ -37,7 +37,6 @@
         {% else %} {% for img in images %}
         <div class="col">
             <!-- evaluar si la imagen pertenece al tipo fuego, agua o planta -->
-            <!-- <div class="card {% if 'grass' in card.types %} border-success {% elif 'fire' in card.types %} border-danger {% elif 'water' in card.types %} border-primary {% else %} border-warning {% endif %} mb-3 ms-5" style="max-width: 540px; "></div> -->
             <div class="card border-dark border-4 {% if 'grass' in img.types %} bg-success {% elif 'fire' in img.types %} bg-danger {% elif 'water' in img.types %} bg-info {% else %} bg-warning {% endif %} mb-3 ms-5" style="max-width: 540px; ">
                  <div class="row g-0">
                      <div class="col-md-4">
@@ -55,9 +54,9 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 </div>
                             </p>
-                            <p class="card-text"><small class="text-body-secondary">Altura: {{ img.height }}</small></p>
-                            <p class="card-text"><small class="text-body-secondary">Peso: {{ img.weight }}</small></p>
-                            <p class="card-text"><small class="text-body-secondary">Nivel de experiencia base: {{ img.base }}</small></p>
+                            <p class="card-text"><small class="text-body-secondary info-cards">Altura: {{ img.height }}</small></p>
+                            <p class="card-text"><small class="text-body-secondary info-cards">Peso: {{ img.weight }}</small></p>
+                            <p class="card-text"><small class="text-body-secondary info-cards">Nivel de experiencia base: {{ img.base }}</small></p>
                         </div>
                         {% if request.user.is_authenticated %}
                         <div class="card-footer text-center">

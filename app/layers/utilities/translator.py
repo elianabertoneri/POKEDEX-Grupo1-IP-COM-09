@@ -15,6 +15,7 @@ def fromRequestIntoCard(poke_data):
     )
     return card
 
+
 # recupera los tipos del JSON
 def getTypes(poke_data):
     types = []
